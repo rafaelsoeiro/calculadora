@@ -1,0 +1,18 @@
+.container-calculadora {
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    background-color: rgba(51, 51, 51, 0.4);
+    backdrop-filter: blur(3px);
+    width: 325px;
+    height: 390px;
+    padding: 5px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1fr 55px 55px 55px 55px 55px;
+}
+
+.container-calculadora h1 {
+    display: inline;
+    padding: 0;
+}

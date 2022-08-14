@@ -1,0 +1,62 @@
+:root {
+    --btn-color: #131415;
+    --btn-color-variant: #303336;
+    --btn-operation: #1481BA;
+    --btn-operation-variant: #106594
+}
+
+/* .btn {
+    display: inline-block;
+    cursor: pointer;
+    
+    margin: 2px;
+    width: max-content;
+    padding: 0.75rem 1.2rem;
+
+    background-color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+    border-radius: 5px;
+
+    color: var(--color-white);
+    transition: var(--transition);
+} */
+
+.btn {
+    margin: 2px;
+    font-size: 1.5rem;
+    background-color: var(--btn-color);
+    color: var(--color-white);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:active {
+    background: var(--btn-color-variant);
+    color: var(--color-white);
+    border-color: transparent;
+}
+
+.operation {
+    margin: 2px;
+    font-size: 1.5rem;
+    background-color: var(--btn-operation);
+    color: var(--color-white);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.operation:active {
+    background: var(--btn-operation-variant);
+    color: var(--color-white);
+    border-color: transparent;
+}
+
+.double {
+    grid-column: span 2;
+}
+
+.triple {
+    grid-column: span 3;
+}
