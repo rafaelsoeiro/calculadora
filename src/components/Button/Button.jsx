@@ -2,7 +2,6 @@ import React from "react";
 import "./Button.css";
 
 const Button = (props) => {
-    const conteudoTecla = props.label;
     return (
         <>
             <button
