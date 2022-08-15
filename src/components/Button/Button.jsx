@@ -1,17 +1,19 @@
 import React from "react";
-import './Button.css'
+import "./Button.css";
 
 const Button = (props) => {
+    const conteudoTecla = props.label;
     return (
         <>
             <button
-                onClick={(_) => props.click && props.click(props.label)}
-                className={
-                    `${props.btn ? 'btn' :''}
-                    ${props.operation ? 'operation': ''}
-                    ${props.double ? 'double':''}
-                    ${props.triple ? 'triple' : ''}`
-                }> {props.label || 0} </button>
+                onClick={(e) => props.click && props.click(e.target.innerHTML)}
+                className={`${props.btn ? "btn" : ""}
+                    ${props.operation ? "operation" : ""}
+                    ${props.double ? "double" : ""}
+                    ${props.triple ? "triple" : ""}`}
+            >
+                {props.label || 0}
+            </button>
         </>
     );
 };
