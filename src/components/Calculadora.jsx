@@ -15,6 +15,7 @@ const Calculatora = () => {
         setOperation("");
         console.log("limpou display");
     };
+
     const addDigit = (n) => {
         if (n === "." && current.includes(".")) {
             return;
@@ -40,17 +41,19 @@ const Calculatora = () => {
         setOperation(op);
         setPrevius(current);
         setCurrent("");
-        // console.log(current);
         console.log(op);
     };
+
     const switchOpeation = (newOp) => {
         setOperation(newOp);
     };
+
     const equals = ()=>{
         if(current!=='' && previus!== ''){
             doOperation(operation)
         }
     }
+
     const doOperation = (op) => {
         switch (op) {
             case "+":
@@ -99,7 +102,6 @@ const Calculatora = () => {
                 currentValue={current}
                 operation={operation}
             />
-
             <Button label="AC" btn triple click={clear} />
             <Button label="/" operation click={addOperation} />
             <Button label="7" btn click={addDigit} />
@@ -120,5 +122,4 @@ const Calculatora = () => {
         </div>
     );
 };
-
 export default Calculatora;
