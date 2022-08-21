@@ -55,42 +55,42 @@ const Calculatora = () => {
     }
 
     const doOperation = (op) => {
+        let resultadoOperacao
         switch (op) {
             case "+":
                 console.log("adicionou "+op);
-                let soma = parseFloat(current) + parseFloat(previus);
-                setPrevius(soma.toString());
+                resultadoOperacao = parseFloat(current) + parseFloat(previus);
+                setPrevius(resultadoOperacao.toString());
                 setCurrent("");
                 setOperation("")
-                console.log("Antes era "+previus+" e adicionou: " +current+". Então o resultado foi: "+soma);
+                console.log(`Antes era ${previus} e adicionou-se ${current}. Então o resultado foi ${resultadoOperacao}`)
                 break;
             case "-":
                 console.log("subtraiu "+op);
-                let sub =  parseFloat(previus) - parseFloat(current)
-                setPrevius(sub.toString())
+                resultadoOperacao =  parseFloat(previus) - parseFloat(current)
+                setPrevius(resultadoOperacao.toString())
                 setCurrent("");
                 setOperation("")
-
-                console.log("Antes era "+previus+" e subtraiu: "+ current+". Então o resultado foi: "+sub);
+                console.log(`Antes era ${previus} e subtraiu-se ${current}. Então o resultado foi: ${resultadoOperacao}`)
                 break;
             case "*":
                 console.log("multiplicou "+op);
-                let multi = parseFloat(current) * parseFloat(previus);
-                setPrevius(multi.toString())
+                 resultadoOperacao = parseFloat(current) * parseFloat(previus);
+                setPrevius(resultadoOperacao.toString())
                 setCurrent("");
                 setOperation("")
-                console.log("Antes era "+previus+" e multiplicou por "+current+". Então o resultado foi: "+ multi)
+                console.log(`Antes era ${previus} e multiplicou por ${current}. Então o resultado foi: ${resultadoOperacao}`)
                 break;
             case "/":
                 console.log("dividiu "+op);
-                let div = parseFloat(previus) / parseFloat(current)
-                setPrevius(div.toString())
+                resultadoOperacao = parseFloat(previus) / parseFloat(current)
+                setPrevius(resultadoOperacao.toString())
                 setCurrent("");
                 setOperation("")
-                console.log("Antes era "+previus+" e dividiu por "+current+". Então o resultado foi: "+ div)
+                console.log(`Antes era ${previus} e dividiu por ${current}. Então o resultado foi: ${resultadoOperacao}`)
                 break;
             default:
-                console.log("equals");
+                console.log("Caiu no defaut");
                 console.log(op)
                 break;
         }
