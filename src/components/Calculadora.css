@@ -3,13 +3,13 @@
     border-radius: 5px;
     background-color: rgba(51, 51, 51, 0.4);
     backdrop-filter: blur(3px);
-    width: 30rem;
-    height: 25rem;
+    width: 25rem;
+    height: 30rem;
     padding: 5px;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 1fr 55px 55px 55px 55px 55px;
+    grid-template-rows: 1fr 70px 70px 70px 70px 70px;
 }
 
 .container-calculadora h1 {
@@ -20,8 +20,9 @@
 /* ============== Media Queries (Medium devices) ============== */
 @media screen and (max-width: 1024px) {
     .container-calculadora {
-        width: 35rem;
-        height: 25rem;
+        width: 30rem;
+        height: 35rem;
+        grid-template-rows: 1fr 75px 75px 75px 75px 75px;
     }
 }
 
@@ -29,6 +30,7 @@
 @media screen and (max-width: 600px) {
     .container-calculadora {
         width: 20rem;
-        height: 25rem;
+        height: 30rem;
+        grid-template-rows: 1fr 70px 70px 70px 70px 70px;
     }
 }

@@ -44,3 +44,17 @@
 .triple {
     grid-column: span 3;
 }
+
+/* ============== Media Queries (Medium devices) ============== */
+@media screen and (max-width: 1024px) {
+    .btn {
+        font-size: 2rem;
+    }
+}
+
+/* ============== Small Queries (Small devices) ============== */
+@media screen and (max-width: 600px) {
+    .btn {
+        font-size: 1.75rem;
+    }
+}
