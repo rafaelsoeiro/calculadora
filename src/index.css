@@ -34,6 +34,7 @@ body {
   display: flex;
   height: 100vh;
   justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: 'oswald', sans-serif;
   background-image: url(../src/assets/bg-texture.png), linear-gradient(135deg, var(--color-primary), var(--color-bg));

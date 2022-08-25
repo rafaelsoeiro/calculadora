@@ -3,8 +3,8 @@
     border-radius: 5px;
     background-color: rgba(51, 51, 51, 0.4);
     backdrop-filter: blur(3px);
-    width: 325px;
-    height: 390px;
+    width: 20rem;
+    height: 25rem;
     padding: 5px;
     overflow: hidden;
     display: grid;
@@ -15,4 +15,20 @@
 .container-calculadora h1 {
     display: inline;
     padding: 0;
+}
+
+/* ============== Media Queries (Medium devices) ============== */
+@media screen and (max-width: 1024px) {
+    .container-calculadora {
+        width: 30rem;
+        height: 25rem;
+    }
+}
+
+/* ============== Small Queries (Small devices) ============== */
+@media screen and (max-width: 600px) {
+    .container-calculadora {
+        width: 22rem;
+        height: 25rem;
+    }
 }
