@@ -4,7 +4,7 @@
 
 <p align="center">
  <a href="#pré-requisitos">Pré-Requisitos</a> •
- <a href="#Rodando o projeto">Rodando o projeto</a> •
+ <a href="#rodando-o-projeto">Rodando o projeto</a> •
  <a href="#tecnologias">Tecnologias</a> •
  <a href="#autor">Autor</a>
 </p>
