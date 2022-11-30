@@ -18,7 +18,7 @@
 
 ### Pré-requisitos
 
-Antes de começar, é necessario destacar que além das intruções abaixo não existem pré-requisitos para trabalhar neste projeto já que trata-se de um projeto React comum.
+Antes de começar, é necessario destacar alem de possuir o node.js instalado na su maquina não existem pré-requisitos para trabalhar neste projeto já que trata-se de um projeto React comum.
 
 Dito isso, é fundamental ter um bom editor para trabalhar com o código, por exemplo, o [VSCode](https://code.visualstudio.com/)
 
